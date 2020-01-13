@@ -4,8 +4,7 @@ environment:
   APPVEYOR_RDP_PASSWORD: un1sh@Windows
   
 build_script:
-  - cmd echo "testing build..."
-text: off
+  - cmd: echo "test build..."
 
 init:
   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
